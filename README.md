@@ -4,8 +4,8 @@ And connect to Cloud Storage to backup.
 
 ## Content
 [Set up compute engine](https://github.com/cindytsai/Google-Cloud-Platform-LAMP-Server-Setup#set-up-compute-engine)
-[Set up cloud storage]
+[Set up cloud storage](https://github.com/cindytsai/Google-Cloud-Platform-LAMP-Server-Setup#set-up-cloud-storage)
 ## Set Up Compute Engine
-1.Create a project
-image/1.png
+1.Create a project</br>
+(image/1.png)
 ## Set Up Cloud Storage
