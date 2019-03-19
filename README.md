@@ -8,7 +8,9 @@ And connect to Cloud Storage to backup.
 ## Set Up Compute Engine
 1.Create a project</br>
 ![pic](image/SetupGCP/1.png)
+
 ![pic](image/SetupGCP/2.png)
+
 ![pic](image/SetupGCP/3.png)
 ![pic](image/SetupGCP/4.png)
 1.Go to Google Compute Engine and create an instance</br>
