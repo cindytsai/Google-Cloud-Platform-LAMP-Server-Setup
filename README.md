@@ -15,7 +15,9 @@ And connect to Cloud Storage to backup.
 ![pic](image/SetupGCP/4.png)
 1.Go to Google Compute Engine and create an instance</br>
 ![pic](image/SetupGCP/5.png)
+
 ![pic](image/SetupGCP/6.png)
+
 Remember to allow full access to all Cloud APIs.</br>
 ![pic](image/SetupGCP/7.png)
 
