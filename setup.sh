@@ -15,6 +15,6 @@ sudo apt-get install apache2
 sudo apt-get install php7.0 php7.0-mysql libapache2-mod-php7.0 php7.0-curl
 sudo service apache2 restart
 
-#Getting some tools
+#Getting some tools if you needed
 sudo apt-get install git tree
 
