@@ -43,3 +43,5 @@ Time to setup your instance.
 
 ![pic](image/SetupGCS/3.png)
 
+![pic](image/SetupGCS/4.png)
+
