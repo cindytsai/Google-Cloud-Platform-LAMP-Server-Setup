@@ -5,6 +5,7 @@ And connect to Cloud Storage to backup.
 ## Contents
 - [Set up compute engine](https://github.com/cindytsai/Google-Cloud-Platform-LAMP-Server-Setup#set-up-compute-engine)
 - [Set up cloud storage](https://github.com/cindytsai/Google-Cloud-Platform-LAMP-Server-Setup#set-up-cloud-storage)
+
 ## Set Up Compute Engine
 ###### 1.Create a project</br>
 ![pic](image/SetupGCP/1.png)
@@ -31,3 +32,14 @@ And connect to Cloud Storage to backup.
 Time to setup your instance.
 
 ## Set Up Cloud Storage
+###### 1.Go to Cloud Storage and create a bucket
+![pic](image/SetupGCS/1.png)
+
+![pic](image/SetupGCS/2.png)
+
+**For more details :**
+[Storage class](https://cloud.google.com/storage/docs/storage-classes)
+[Access control model](https://cloud.google.com/storage/docs/access-control/)
+
+![pic](image/SetupGCS/3.png)
+
