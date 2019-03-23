@@ -20,7 +20,14 @@ And connect to Cloud Storage to backup.
 
 ![pic](image/SetupGCP/6.png)
 
-Remember to allow full access to all Cloud APIs.</br>
+**Remember to allow full access to all Cloud APIs.**</br>
 ![pic](image/SetupGCP/7.png)
+
+###### 3.Entering SSH
+![pic](image/SetupGCP/8.png)
+
+![pic](image/SetupGCP/9.png)
+
+Time to setup your instance.
 
 ## Set Up Cloud Storage
