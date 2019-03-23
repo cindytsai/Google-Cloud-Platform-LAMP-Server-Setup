@@ -37,7 +37,7 @@ Time to setup your instance.
 
 ![pic](image/SetupGCS/2.png)
 
-**For more details :**
+**For more details :**</br>
 [Storage class](https://cloud.google.com/storage/docs/storage-classes)</br>
 [Access control model](https://cloud.google.com/storage/docs/access-control/)</br>
 
