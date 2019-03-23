@@ -7,7 +7,7 @@ And connect to Cloud Storage to backup.
 - [Set up cloud storage](https://github.com/cindytsai/Google-Cloud-Platform-LAMP-Server-Setup#set-up-cloud-storage)
 
 ## Set Up Compute Engine
-###### 1.Create a project</br>
+###### 1.Create a project
 ![pic](image/SetupGCP/1.png)
 
 ![pic](image/SetupGCP/2.png)
@@ -28,6 +28,17 @@ And connect to Cloud Storage to backup.
 ![pic](image/SetupGCP/8.png)
 
 ![pic](image/SetupGCP/9.png)
+
+###### 4.Reserving a static external IP address
+![pic](image/SetGCP/10.png)
+
+![pic](image/SetGCP/11.png)
+
+![pic](image/SetGCP/12.png)
+
+![pic](image/SetGCP/13.png)
+
+![pic](image/SetGCP/14.png)
 
 Time to setup your instance.
 
