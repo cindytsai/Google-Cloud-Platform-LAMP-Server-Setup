@@ -38,8 +38,8 @@ Time to setup your instance.
 ![pic](image/SetupGCS/2.png)
 
 **For more details :**
-[Storage class](https://cloud.google.com/storage/docs/storage-classes)
-[Access control model](https://cloud.google.com/storage/docs/access-control/)
+[Storage class](https://cloud.google.com/storage/docs/storage-classes)</br>
+[Access control model](https://cloud.google.com/storage/docs/access-control/)</br>
 
 ![pic](image/SetupGCS/3.png)
 
