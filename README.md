@@ -30,15 +30,15 @@ And connect to Cloud Storage to backup.
 ![pic](image/SetupGCP/9.png)
 
 ###### 4.Reserving a static external IP address
-![pic](image/SetGCP/10.png)
+![pic](image/SetupGCP/10.png)
 
-![pic](image/SetGCP/11.png)
+![pic](image/SetupGCP/11.png)
 
-![pic](image/SetGCP/12.png)
+![pic](image/SetupGCP/12.png)
 
-![pic](image/SetGCP/13.png)
+![pic](image/SetupGCP/13.png)
 
-![pic](image/SetGCP/14.png)
+![pic](image/SetupGCP/14.png)
 
 Time to setup your instance.
 
