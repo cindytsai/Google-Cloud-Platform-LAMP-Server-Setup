@@ -41,8 +41,6 @@ And connect to Cloud Storage to backup.
 
 ![pic](image/SetupGCP/14.png)
 
-Time to setup your instance.
-
 ## Set Up Cloud Storage
 ###### 1.Go to Cloud Storage and create a bucket
 ![pic](image/SetupGCS/1.png)
@@ -58,3 +56,8 @@ Time to setup your instance.
 ![pic](image/SetupGCS/4.png)
 
 ## Set Up Your Virtual Machine
+###### 1.Update and get Apache2, PHP7, MariaDB(MySQL)
+Get the setup script.</br>
+```
+wget https://github.com/cindytsai/Google-Cloud-Platform-LAMP-Server-Setup/blob/master/setup.sh
+```
