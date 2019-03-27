@@ -61,3 +61,7 @@ Get the setup script.</br>
 ```
 wget https://github.com/cindytsai/Google-Cloud-Platform-LAMP-Server-Setup/blob/master/setup.sh
 ```
+Let setup.sh be executable.</br>
+```
+chmod 777 setup.sh
+```
