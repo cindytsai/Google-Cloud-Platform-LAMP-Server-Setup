@@ -59,9 +59,31 @@ And connect to Cloud Storage to backup.
 ###### 1.Update and get Apache2, PHP7, MariaDB(MySQL)
 Get the setup script.</br>
 ```
-wget https://github.com/cindytsai/Google-Cloud-Platform-LAMP-Server-Setup/blob/master/setup.sh
+wget https://raw.githubusercontent.com/cindytsai/Google-Cloud-Platform-LAMP-Server-Setup/master/setup.sh
 ```
 Let setup.sh be executable.</br>
 ```
 chmod 777 setup.sh
+```
+Run ![`setup.sh`](setup.sh).</br>
+```
+#!/bin/bash
+
+#Update and upgrade server
+sudo apt-get -y update
+sudo apt-get -y upgrade
+
+#Install MariDB(MySQL)
+sudo apt-get install -y mariadb-server mariadb-client
+sudo mysql_secure_installation
+
+#Install Apache2
+sudo apt-get install -y apache2
+
+#Install PHP7
+sudo apt-get install -y php7.0 php7.0-mysql libapache2-mod-php7.0 php7.0-curl
+sudo service apache2 restart
+
+#Getting some tools if you needed
+sudo apt-get install -y git tree
 ```
