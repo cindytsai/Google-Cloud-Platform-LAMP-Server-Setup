@@ -57,6 +57,7 @@ And connect to Cloud Storage to backup.
 
 ## Set Up Your Virtual Machine
 ###### 1.Update and get Apache2, PHP7, MariaDB(MySQL)
+Entering SSH.</br>
 Get the setup script.</br>
 ```
 wget https://raw.githubusercontent.com/cindytsai/Google-Cloud-Platform-LAMP-Server-Setup/master/setup.sh
@@ -65,7 +66,11 @@ Let setup.sh be executable.</br>
 ```
 chmod 777 setup.sh
 ```
-Run [`setup.sh`](setup.sh).</br>
+Run _setup.sh_.</br>
+```
+./setup.sh
+```
+_setup.sh_</br>
 ```
 #!/bin/bash
 
