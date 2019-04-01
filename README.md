@@ -65,7 +65,7 @@ Let setup.sh be executable.</br>
 ```
 chmod 777 setup.sh
 ```
-Run ![`setup.sh`](setup.sh).</br>
+Run [`setup.sh`](setup.sh).</br>
 ```
 #!/bin/bash
 
