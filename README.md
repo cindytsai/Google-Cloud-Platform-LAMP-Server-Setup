@@ -66,11 +66,11 @@ Let setup.sh be executable.</br>
 ```
 chmod 777 setup.sh
 ```
-Run setup.sh.</br>
+Run _setup.sh_.</br>
 ```
 ./setup.sh
 ```
-setup.sh</br>
+_setup.sh_</br>
 ```
 #!/bin/bash
 
