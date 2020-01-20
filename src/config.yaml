@@ -1,0 +1,40 @@
+# 2020.1.19
+# For creating LAMP server on Google Cloud Platform with Compute Engine.
+# This is the configuration file, build in 
+# zone: asia-east1-b
+# machineType: n1-standard-1 with 3.75GB memory and 10GB disk size
+
+resources:
+- type: compute.v1.instance
+  name: ntu-server
+  properties:
+    zone: asia-east1-b
+    machineType: zones/asia-east1-b/machineTypes/n1-standard-1
+    metadata:
+      items:
+      - key: startup-script
+        value: |
+          #!/bin/bash
+          sudo apt-get -y update
+          sudo apt-get -y upgrade
+          sudo apt-get install -y mariadb-server mariadb-client
+          sudo mysql_secure_installation
+          sudo apt-get install -y apache2
+          sudo apt-get install -y php7.0 php7.0-mysql libapache2-mod-php7.0 php7.0-curl
+          sudo service apache2 restart 
+          sudo apt-get install -y git tree
+    disks:
+    - deviceName: boot
+      type: PERSISTENT
+      boot: true
+      autoDelete: true
+      initializeParams:
+        sourceImage: https://www.googleapis.com/compute/v1/projects/debian-cloud/global/images/family/debian-9
+    networkInterfaces:
+    - network: https://www.googleapis.com/compute/v1/projects/PROJECT_ID/global/network/default
+      accessConfigs:
+      - name: External IP
+        type: ONE_TO_ONE_NAT
+    tags:
+      items: 
+      - http
