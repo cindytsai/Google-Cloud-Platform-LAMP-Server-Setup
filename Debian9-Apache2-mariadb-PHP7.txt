@@ -1,0 +1,146 @@
+#1
+sudo apt-get update
+
+#2
+sudo apt-get upgrade
+
+-------------MariaDB(MySQL)--------
+#3
+sudo apt-get install mariadb-server mariadb-client
+
+#4
+sudo mysql_secure_installation
+
+-------------apache2---------------
+#5
+sudo apt-get install apache2
+
+-------------PHP 7-----------------
+#6
+sudo apt-get install php7.0 php7.0-mysql libapache2-mod-php7.0 php7.0-curl
+
+#7
+sudo service apache2 restart
+
+--------Setting up----------------------
+#8 
+sudo apt-get install git tree
+
+#9
+cd /var/www/html/
+
+#10
+sudo rm index.html
+
+#11
+cd
+
+#12
+[NTUcup]
+sudo git clone https://github.com/tim841206/NTUcup
+
+[NEWcup]
+sudo git clone https://github.com/tim841206/NEWcup
+
+#13
+[NTUcup]
+cd NTUcup
+
+[NEWcup]
+cd NEWcup
+
+#14
+sudo cp -R * /var/www/html/
+
+-----CHECK if the files are in the directory----
+
+
+-----Creating Database------------
+#15
+sudo mysql
+
+#16
+[NTUcup]
+CREATE DATABASE NTUcup;
+
+[NEWcup]
+CREATE DATABASE NEWcup;
+
+#17
+[NTUcup]
+USE NTUcup;
+
+[NEWcup]
+USE NEWcup;
+
+#18
+[NTUcup]
+SOURCE /var/www/html/resource/NTUcup.sql;
+
+[NEWcup]
+SOURCE /var/www/html/resource/NEWcup.sql;
+
+#19
+CREATE DATABASE tournament;
+
+#20
+USE tournament;
+
+#21
+SOURCE /var/www/html/tournament/resource/tournament.sql
+
+#22
+exit;
+
+#23
+sudo service apache2 restart
+---------Set Mysql User-----------
+#24
+sudo mysql
+
+#25
+CREATE USER 'NTUcup'@'localhost' IDENTIFIED BY '0986036999';
+
+#26
+[NTUcup]
+GRANT ALL PRIVILEGES ON NTUcup.* TO 'NTUcup'@'localhost';
+
+[NEWcup]
+GRANT ALL PRIVILEGES ON NEWcup.* TO 'NTUcup'@'localhost';
+
+#27
+GRANT ALL PRIVILEGES ON tournament.* TO 'NTUcup'@'localhost';
+
+#28
+FLUSH PRIVILEGES;
+
+---------Open log for mysql-------
+#29
+sudo mysql
+
+#30
+show variables like 'gen%';
+
+#31
+set GLOBAL general_log=ON;
+
+#32
+commit;
+
+=========================================
+mysql log file store in /var/lib/mysql
+
+---------Grant full access for tournament system---------
+---------Make /var/www/html/tournament/NTUcup folder is writable and executable
+#33
+cd /var/www/html/tournament
+
+#34
+sudo chmod 777 NTUcup
+
+---------Make the backup file is writable and executable
+#35
+cd /var/www/html/resource/backup
+
+#36
+sudo chmod 777 *

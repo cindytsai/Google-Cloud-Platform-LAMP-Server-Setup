@@ -1,0 +1,8 @@
+#28
+show variables like '%log_output%';
+
+#29
+set  global log_output='TABLE';
+
+#30
+select * from mysql.general_log;

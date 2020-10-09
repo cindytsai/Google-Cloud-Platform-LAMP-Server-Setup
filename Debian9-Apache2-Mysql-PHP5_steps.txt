@@ -1,0 +1,130 @@
+#1
+sudo apt-get update
+
+#2
+sudo apt-get ugrade
+
+-------------apache2---------------
+#3
+sudo apt-get install apache2
+
+-------------MySQL-----------------
+#4
+sudo wget https://dev.mysql.com/get/mysql-apt-config_0.8.6-1_all.deb
+
+#5
+sudo apt-get install gdebi-core
+
+#6
+sudo gdebi mysql-apt-config_0.8.6-1_all.deb
+
+#7
+sudo apt-get update
+
+#8
+sudo apt-get install mysql-server
+
+#9
+sudo mysql_secure_installation
+
+------------IF CAN'T SET ROOT PASSWORD TO EMPTY-------------
+#10
+set new password for root to -> toor
+
+#11
+y, y, y, y
+
+#12
+sudo mysql -uroot -p
+Enter password : toor
+
+#13
+USE mysql;
+
+#14
+UPDATE user SET authentication_string=password(''), plugin='mysql_native_password' WHERE user='root';
+
+#15
+flush privileges
+
+#16
+exit;
+
+-----------PHP5----------------------
+#15
+sudo apt-get install apt-transport-https
+
+#16
+sudo sh -c "curl https://packages.sury.org/php/apt.gpg | apt-key add -"
+
+#17
+sudo sh -c "echo 'deb https://packages.sury.org/php/  stretch  main' > /etc/apt/sources.list.d/php.list"
+
+#18
+sudo apt-get update
+
+#19
+sudo apt-get install php5.6-mysql php5.6
+
+#20
+sudo service apache2 restart
+
+----------general tool--------------
+#21
+sudo apt-get install git
+
+#22
+sudo apt-get install tree
+
+----------setting up ---------------
+#23
+cd /var/www/html/
+
+#24
+sudo rm index.html
+
+#25
+cd
+
+#26
+NEW cup
+sudo git clone https://github.com/tim841206/NEWcup
+NTU cup
+sudo git clone https://github.com/tim841206/NTUcup
+
+#27
+cd NEWcup
+
+#28
+sudo cp -R * /var/www/html/
+
+#29
+cd /var/www/html/
+
+#30
+tree
+
+---------for NEWcup-----------------
+#31
+sudo mysql
+
+#32
+CREATE DATABASE NEWcup;
+
+#33
+USE NEWcup;
+
+#34
+SOURCE /var/www/html/NEWcup.sql
+
+#35
+CREATE DATABASE tournament;
+
+#36
+USE tournament;
+
+#37
+SOURCE /var/www/html/tournament/resource/tournament.sql
+
+#38
+sudo service apache2 restart
