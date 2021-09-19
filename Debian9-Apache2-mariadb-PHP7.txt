@@ -121,7 +121,6 @@ SHOW GRANTS FOR 'NTUcup'@'localhost';
 sudo mysql
 
 #30
-use tournament; (Remember also set for NTUcup)
 show variables like 'gen%';
 
 #31
